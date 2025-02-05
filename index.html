@@ -6,58 +6,88 @@
     <title>支付成功</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
             color: #333;
             text-align: center;
-            padding: 50px;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
         }
+
         .success-container {
             background-color: #ffffff;
-            border-radius: 8px;
-            padding: 30px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
             max-width: 500px;
-            margin: 0 auto;
+            width: 100%;
+            text-align: center;
         }
+
         .icon {
-            font-size: 50px;
+            font-size: 60px;
             color: #28a745;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
+
         h1 {
-            font-size: 24px;
+            font-size: 28px;
             color: #28a745;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
+
         p {
-            font-size: 16px;
+            font-size: 18px;
             color: #666;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
+
         .button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 25px;
             background-color: #007bff;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-            margin-top: 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            margin-top: 25px;
+            transition: background-color 0.3s ease;
         }
+
         .button:hover {
             background-color: #0056b3;
+        }
+
+        /* 手机适配 */
+        @media (max-width: 600px) {
+            .icon {
+                font-size: 50px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .button {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="success-container">
-        <div class="icon">&#x2714;</div> <!-- 勾号图标 -->
-        <h1>支付成功</h1>
-        <p>感谢您的购买！您的支付已经成功处理。</p>
-        <p>您可以查看订单详情或返回首页。</p>
-    </div>
+<div class="success-container">
+    <div class="icon">&#x2714;</div> <!-- 勾号图标 -->
+    <h1>支付成功</h1>
+    <p>感谢您的购买！您的支付已经成功处理。</p>
+    <p>您可以查看订单详情或返回首页。</p>
+</div>
 
 </body>
 </html>
